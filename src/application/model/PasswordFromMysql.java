@@ -37,7 +37,7 @@ public class PasswordFromMysql implements DAO<Password> {
 	}
 
 	private ResultSet getResultSet() {
-		DBConnector.setDataBaseName("password2");
+		DBConnector.setDataBaseName("password");
 		conn = DBConnector.connectToDb();
 		if (conn != null)
 			try {
